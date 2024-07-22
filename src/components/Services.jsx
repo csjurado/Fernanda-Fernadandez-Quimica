@@ -7,7 +7,7 @@ const Services = () => {
       titulo: "Este es un ejemplo de un recurso ",
       description:
         "Este es uan descripcio nde los laboratorios que se van a desarrollador correspondientes a los niveles 1 ,2  y 3 ",
-      image: "/src/assets/icons/icono2.png",
+      image: "/src/assets/icono2.png",
     },
   ];
   return (
@@ -22,42 +22,12 @@ const Services = () => {
           Cultivar respeto por todas las especies.
         </p>
         <div className="my-12 flex flex-wrap justify-between items-center gap-8">
-          <img
-            src="/src/assets/icons/icono1.png"
-            alt=""
-            width="5%"
-            height="5%"
-          />
-          <img
-            src="/src/assets/icons/icono2.png"
-            alt=""
-            width="5%"
-            height="5%"
-          />
-          <img
-            src="/src/assets/icons/icono3.png"
-            alt=""
-            width="5%"
-            height="5%"
-          />
-          <img
-            src="/src/assets/icons/icono4.png"
-            alt=""
-            width="5%"
-            height="5%"
-          />
-          <img
-            src="/src/assets/icons/icono5.png"
-            alt=""
-            width="5%"
-            height="5%"
-          />
-          <img
-            src="/src/assets/icons/icono6.png"
-            alt=""
-            width="5%"
-            height="5%"
-          />
+          <img src="/src/assets/icono1.png" alt="" width="5%" height="5%" />
+          <img src="/src/assets/icono2.png" alt="" width="5%" height="5%" />
+          <img src="/src/assets/icono3.png" alt="" width="5%" height="5%" />
+          <img src="/src/assets/icono4.png" alt="" width="5%" height="5%" />
+          <img src="/src/assets/icono5.png" alt="" width="5%" height="5%" />
+          <img src="/src/assets/icono6.png" alt="" width="5%" height="5%" />
         </div>
       </div>
       <div className="mt-20 md:w-1/2 mx-auto text-center">

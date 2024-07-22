@@ -26,7 +26,22 @@ const Home = () => {
                   Presenteción{" "}
                 </span>
                 <p className=" text-neutralGrey text-base mb-8 ">
-                  Despertar la pasión por la naturaleza.
+                  Esta Página ha sido creada con el objetivo de proporcionar un
+                  objeto de aprendizaje a los estudiantes de Primero de
+                  Bachillerato de la asignatura de Química con el fin de que
+                  comprendan conceptos básicos como la definición, estados,
+                  clasificación, propiedades, composición de la materia y
+                  modelos atómicos, incluyendo el modelo mecánico cuántico de la
+                  materia a partir del cual los estudiantes podrán realizar
+                  ejercicios de configuración electrónica y hallar los números
+                  cuánticos. Este objeto de aprendizaje contiene diferentes
+                  recursos muy didácticos, resumidos e interactivos que harán
+                  que el estudiante aprenda de una mejor manera, además contiene
+                  evaluaciones diagnósticas, formativas y sumativas para que el
+                  estudiante relacione sus conocimientos previos con los
+                  conocimientos a obtener, practique lo aprendido y pueda
+                  evaluar su nivel de comprensión del tema de manera teórica y
+                  práctica.
                 </p>
               </h1>
             </div>
