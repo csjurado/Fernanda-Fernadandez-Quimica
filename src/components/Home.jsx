@@ -34,14 +34,7 @@ const Home = () => {
                   modelos atómicos, incluyendo el modelo mecánico cuántico de la
                   materia a partir del cual los estudiantes podrán realizar
                   ejercicios de configuración electrónica y hallar los números
-                  cuánticos. Este objeto de aprendizaje contiene diferentes
-                  recursos muy didácticos, resumidos e interactivos que harán
-                  que el estudiante aprenda de una mejor manera, además contiene
-                  evaluaciones diagnósticas, formativas y sumativas para que el
-                  estudiante relacione sus conocimientos previos con los
-                  conocimientos a obtener, practique lo aprendido y pueda
-                  evaluar su nivel de comprensión del tema de manera teórica y
-                  práctica.
+                  cuánticos.
                 </p>
               </h1>
             </div>

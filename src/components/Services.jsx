@@ -1,5 +1,11 @@
 import React from "react";
-
+// import from "."
+import icono1 from "../assets/icono1";
+import icono2 from "../assets/icono2";
+import icono3 from "../assets/icono3";
+import icono4 from "../assets/icono4";
+import icono5 from "../assets/icono5";
+import icono6 from "../assets/icono6";
 const Services = () => {
   const services = [
     {
@@ -7,7 +13,7 @@ const Services = () => {
       titulo: "Este es un ejemplo de un recurso ",
       description:
         "Este es uan descripcio nde los laboratorios que se van a desarrollador correspondientes a los niveles 1 ,2  y 3 ",
-      image: "/src/assets/icono2.png",
+      image: { icono1 },
     },
   ];
   return (
@@ -22,12 +28,12 @@ const Services = () => {
           Cultivar respeto por todas las especies.
         </p>
         <div className="my-12 flex flex-wrap justify-between items-center gap-8">
-          <img src="/src/assets/icono1.png" alt="" width="5%" height="5%" />
-          <img src="/src/assets/icono2.png" alt="" width="5%" height="5%" />
-          <img src="/src/assets/icono3.png" alt="" width="5%" height="5%" />
-          <img src="/src/assets/icono4.png" alt="" width="5%" height="5%" />
-          <img src="/src/assets/icono5.png" alt="" width="5%" height="5%" />
-          <img src="/src/assets/icono6.png" alt="" width="5%" height="5%" />
+          <img src={icono1} alt="" width="5%" height="5%" />
+          <img src={icono2} alt="" width="5%" height="5%" />
+          <img src={icono3} alt="" width="5%" height="5%" />
+          <img src={icono4} alt="" width="5%" height="5%" />
+          <img src={icono5} alt="" width="5%" height="5%" />
+          <img src={icono6} alt="" width="5%" height="5%" />
         </div>
       </div>
       <div className="mt-20 md:w-1/2 mx-auto text-center">
