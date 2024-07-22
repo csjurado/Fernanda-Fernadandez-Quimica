@@ -29,7 +29,7 @@ const Services = () => {
           Cultivar respeto por todas las especies.
         </p>
         <div className="my-12 flex flex-wrap justify-between items-center gap-8">
-          <GiAtom />
+          {/* <GiAtom /> */}
           <img src={icono1} alt="" width="5%" height="5%" />
           <img src={icono2} alt="" width="5%" height="5%" />
           <img src={icono3} alt="" width="5%" height="5%" />
@@ -54,7 +54,7 @@ const Services = () => {
           >
             <div>
               <div className="bg-[#E8F5E9] mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
-                <img className="-ml-5" src={service.image} alt="" />
+                <img className="-ml-5" src={icono1} alt="" />
               </div>
               <h4 className="text-2xl font-bold text-neutralDGrey mb-2 px-2">
                 {service.titulo}

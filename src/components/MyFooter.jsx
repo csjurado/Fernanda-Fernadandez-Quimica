@@ -27,7 +27,7 @@ const MyFooter = () => {
               <span className="text-[#263238]">Fernanda Fernandez</span>
             </a>
             <div>
-              <p className="mb-1">Copyright © 2024 csjurado - Dev</p>
+              <p className="mb-1">Copyright © 2024</p>
               <p>Todos los derechos reservados </p>
             </div>
           </div>
