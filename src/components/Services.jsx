@@ -1,11 +1,12 @@
 import React from "react";
-// import from "."
-import icono1 from "../assets/icono1";
-import icono2 from "../assets/icono2";
-import icono3 from "../assets/icono3";
-import icono4 from "../assets/icono4";
-import icono5 from "../assets/icono5";
-import icono6 from "../assets/icono6";
+import icono1 from "../assets/icono1.png";
+import icono2 from "../assets/icono2.png";
+import icono3 from "../assets/icono3.png";
+import icono4 from "../assets/icono4.png";
+import icono5 from "../assets/icono5.png";
+import icono6 from "../assets/icono6.png";
+
+import { GiAtom } from "react-icons/gi";
 const Services = () => {
   const services = [
     {
@@ -28,6 +29,7 @@ const Services = () => {
           Cultivar respeto por todas las especies.
         </p>
         <div className="my-12 flex flex-wrap justify-between items-center gap-8">
+          <GiAtom />
           <img src={icono1} alt="" width="5%" height="5%" />
           <img src={icono2} alt="" width="5%" height="5%" />
           <img src={icono3} alt="" width="5%" height="5%" />
