@@ -5,16 +5,19 @@ import MyFooter from "./components/MyFooter";
 import NavBar from "./components/NavBar";
 import Newsletter from "./components/Newsletter";
 import Services from "./components/Services";
-
+import { U01 } from "./pages/Unidad_01/U01";
 function App() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar />
       <Home />
       <Services />
       <About />
       <Newsletter />
-      <MyFooter />
+      <MyFooter /> */}
+
+      <U01 />
+      {/* <RouterProvider router={router} /> */}
     </>
   );
 }

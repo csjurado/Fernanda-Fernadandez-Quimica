@@ -2,11 +2,21 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 import biologia from "../assets/biologia.png";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { Routes, Route, Link } from "react-router-dom";
 
 // Iconos de React
 
 import { FaXmark, FaBars } from "react-icons/fa6";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { U01 } from "../pages/Unidad_01/U01.jsx";
+const router = createBrowserRouter([
+  {
+    path: "/unidad-01-ecuaciones-quimicas",
+    element: <U01 />,
+  },
+]);
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +45,10 @@ const NavBar = () => {
 
   // Navitems array
   const navItems = [
-    { link: "Unidad 1", path: "unidad-1" },
+    {
+      link: "Unidad 1: Ecuaciones Químicas",
+      path: "/unidad-01-ecuaciones-quimicas",
+    },
     { link: "Unidad 2", path: "unidad-2" },
     { link: "Unidad 3", path: "unidad-3" },
     { link: "Unidad 4", path: "unidad-4" },
@@ -53,7 +66,7 @@ const NavBar = () => {
       >
         <div className="flex justify-between items-center text-base gap-8">
           <a
-            href=""
+            href="/U01.jsx"
             className="text-2xl font-semibold flex items-center space-x-3"
           >
             <img
@@ -65,7 +78,7 @@ const NavBar = () => {
           </a>
           {/* Nav Items para  */}
 
-          <ul className=" md:flex space-x-12 hidden">
+          {/* <ul className=" md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
               <Link
                 to={path}
@@ -79,6 +92,29 @@ const NavBar = () => {
                 {link}
               </Link>
             ))}
+          </ul> */}
+          <ul className=" md:flex space-x-10 hidden">
+            <a
+              className="block text-sm text-gray900 hover:text-brandPrimary first:font-medium"
+              href="./U01.jsx"
+            >
+              Ecuaciones Químicas
+            </a>
+            <a className="block text-sm text-gray900 hover:text-brandPrimary first:font-medium">
+              Reacciones Químicas
+            </a>
+            <a className="block text-sm text-gray900 hover:text-brandPrimary first:font-medium">
+              El estado gaseoso y sus leyes
+            </a>
+            <a className="block text-sm text-gray900 hover:text-brandPrimary first:font-medium">
+              El estado líquido y los sistemas dispersos
+            </a>
+            <a className="block text-sm text-gray900 hover:text-brandPrimary first:font-medium">
+              Cinética y equilibrio químico
+            </a>
+            <a className="block text-sm text-gray900 hover:text-brandPrimary first:font-medium">
+              Ácidos y bases
+            </a>
           </ul>
           {/* btn for large devices */}
           <div className="space-x-12 hidden lg:flex items-center">
@@ -121,13 +157,16 @@ const NavBar = () => {
             smooth={true}
             offset={-100}
             key={path}
-            className="block text-base text-gray900 hover:text-white first:font-medium"
+            className="block text-sm text-gray900 hover:text-white first:font-medium"
           >
             {" "}
             {link}
           </Link>
         ))}
       </div>
+      {/* <Routes>
+        <Route path="/" element={<U01 />} />
+      </Routes> */}
     </header>
   );
 };
