@@ -1,6 +1,5 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import NavBar from "../../components/NavBar";
 import unidad_01 from "../../assets/unidad_01.jpeg";
 import MyFooter from "../../components/MyFooter";
 
@@ -11,6 +10,7 @@ import phet from "../../assets/phet.png";
 import game from "../../assets/game.png";
 import quizz from "../../assets/quizz.png";
 import liveworksheets from "../../assets/liveworksheets.png";
+import Layout from "../Layout";
 export const U01 = () => {
   const services = [
     {
@@ -23,7 +23,7 @@ export const U01 = () => {
   ];
   return (
     <>
-      <NavBar />
+      <Layout />
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-12">
           <div className="w-full md:w-1/2 flex justify-center">
@@ -100,14 +100,11 @@ export const U01 = () => {
       <div className="mt-4 grid lg:grid-cols-2 md:grid-cols-1 gap-6 justify-items-center">
         <div className="lg:col-span-1 md:col-span-2 flex justify-center items-center">
           <iframe
-            width="560"
-            height="315"
-            src="https://prezi.com/view/YLHKVhU0KGb6apAw9FeH/ "
-            title="Prezi"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            src="https://gamma.app/embed/3j3ymbk0xv7tpvn"
+            // style="width: 700px; max-width: 100%; height: 450px"
             className="w-full h-full md:w-[560px] md:h-[315px] rounded-md shadow"
+            allow="fullscreen"
+            title="Introducción a la masa molar y el número de Avogadro"
           ></iframe>
         </div>
         <div className="lg:col-span-1 md:col-span-2">
@@ -251,7 +248,7 @@ export const U01 = () => {
       </div>
       {/* Sexto Recurso */}
       <div className="mt-4 grid lg:grid-cols-2 md:grid-cols-1 gap-6 justify-items-center">
-        <div className="lg:col-span-1 md:col-span-2 flex justify-center items-center">
+        {/* <div className="lg:col-span-1 md:col-span-2 flex justify-center items-center">
           <iframe
             width="560"
             height="315"
@@ -262,6 +259,24 @@ export const U01 = () => {
             allowfullscreen
             className="w-full h-full md:w-[560px] md:h-[315px] rounded-md shadow"
           ></iframe>
+        </div> */}
+        <div className="lg:col-span-1 md:col-span-2 flex justify-center items-center">
+          <div id="liveworksheet883467">
+            <span id="lwslink883467">
+              <a href="https://www.liveworksheets.com/w/es/quimica/883467">
+                Calculando la Masa Molar
+              </a>
+              , an interactive worksheet by
+              <a href="https://www.liveworksheets.com/user/2008317">
+                Carolina Erazo
+              </a>
+              <a href="https://www.liveworksheets.com">
+                live<b>worksheets.com</b>
+              </a>
+            </span>
+          </div>
+          <script src="https://www.liveworksheets.com/embed/embed.js?v=1"></script>
+          <script>loadliveworksheet(883467,'butm',1511,'www','new');</script>
         </div>
         <div className="lg:col-span-1 md:col-span-2">
           <div className="mt-14 grid  grid-cols-1 w-full md:w-10/12 mx-auto gap-8 justify-items-center">
@@ -288,6 +303,7 @@ export const U01 = () => {
           </div>
         </div>
       </div>
+      <Outlet />
       <MyFooter />
     </>
   );
